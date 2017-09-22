@@ -1,0 +1,422 @@
+nodes: 
+  # Weapon
+  WEAPON_BLADE:
+    name: Weapon Blade
+    category: Weapon
+    tier: 1
+    cost: 300
+    bonus: 
+      weaponPower: +15
+    tip: |
+      Weapon power increases the damage of basic attacks.
+  BOOK_OF_EULOGIES:
+    name: Book of Eulogies
+    category: Weapon
+    tier: 1
+    cost: 300
+    bonus:
+      weaponPower: +5
+      weaponLifesteal: .05
+    passive: Restores 20 health whenever you kill a minion or monster (40 if using a melee default attack).
+    tip: Helps you stay healthy while last-hitting in lane.
+  SWIFT_SHOOTER:
+    name: Swift Shooter
+    category: Weapon
+    tier: 1
+    cost: 300
+    bonus:
+      attackSpeed: .10
+  MINIONS_FEET:
+    name: Minions Feet
+    category: Weapon
+    tier: 1
+    cost: 300
+    bonus:
+      criticalChance: .10
+      criticalDamage: .10
+    passive: |
+      After buying this item, your very first attack on an enemy hero will crit.
+     tip: |
+      You can sell and re-buy this item to refresh the passive.
+  HOURGLASS:
+    name: Hourglass
+  HEAVY_STEEL:
+    name: Heavy Steel
+  SIX_SINS:
+    name: Six Sins
+  BARBED_NEEDLE:
+    name: Barbed Needle
+  PIERCING_SPEAR:
+    name: Piercing Spear
+  BLAZING_SALVO:
+    name: Blazing Salvo
+  LUCKY_STRIKE:
+    name: Lucky Strike
+  CHRONOGRAPH:
+    name: Chronograph
+  SORROWBLADE:
+    name: Sorrowblade
+  SERPENT_MASK:
+    name: Serpent Mask
+  SPELLSWORD:
+    name: Spellsword
+  POISONED_SKIV:
+    name: Poisoned Skiv
+  BREAKING_POINT:
+    name: Breaking Point
+  TENSION_BOW:
+    name: Tension Bow
+  BONESAW:
+    name: Bonesaw
+  TORNADO_TRIGGER:
+    name: Tornado Trigger
+  TYRANTS_MONOCLE:
+    name: Tyrants Monocle
+
+  # Crystal 
+  CRYSTAL_BIT:
+    name: Crystal Bit
+  ENERGY_BATTERY:
+    name: Energy Battery
+  HEAVY_PRISM:
+    name: Heavy Prism
+  ECLIPSE_PRISM:
+    name: Eclipse Prism
+  PIERCING_SHARD:
+    name: Piercing Shard
+  VOID_BATTERY:
+    name: Void Battery
+  SHATTERGLASS:
+    name: Shatterglass
+  BROKEN_MYTH:
+    name: Broken Myth
+  FROSTBURN:
+    name: Frostburn
+  EVE_OF_HARVEST:
+    name: Eve of Harvest
+  ECHO:
+    name: Echo
+  CLOCKWORK:
+    name: Clockwork
+  AFTERSHOCK:
+    name: Aftershock
+  ALTERNATING_CURRENT:
+    name: Alternating Current
+
+  # Defense 
+  OAKHEART:
+    name: Oakheart
+  LIGHT_SHIELD:
+    name: Light Shield
+  LIGHT_ARMOR:
+    name: Light Armor
+  DRAGONHEART:
+    name: Dragonheart
+  LIFESPRING:
+    name: Lifespring
+  REFLEX_BLOCK:
+    name: Reflex Block
+  KINETIC_SHIELD:
+    name: Kinetic Shield
+  COAT_OF_PLATES:
+    name: Coat of Plates
+  SLUMBERING_HUSK:
+    name: Slumbering Husk
+  CRUCIBLE:
+    name: Crucible 
+  FOUNTAIN_OF_RENEWEL:
+    name: Fountain of Renewel
+  AEGIS:
+    name: Aegis
+  METAL_JACKET:
+    name: Metal Jacket
+  ATLAS_PAULDRON:
+    name: Atlas Pauldron
+
+  # Utility
+  SPRINT_BOOTS:
+    name: Sprint Boots
+  TRAVEL_BOOTS:
+    name: Travel Boots
+  FLARE_GUN:
+    name: Flare Gun
+  STORMGUARD_BANNER:
+    name: Stormguard Banner
+  JOURNEY_BOOTS:
+    name: Journey Boots
+  WAR_TREADS:
+    name: War Treads
+  HALCYON_CHARGERS:
+    name: Halcyon Chargers
+  CONTRAPTION:
+    name: Contraption
+  STORMCROWN:
+    name: Stormcrown
+  NULLWAVE_GAUNTLET:
+    name: Nullwave Gauntlet
+  SHIVERSTEEL:
+    name: Shiversteel
+
+  # Other
+  HEALING_FLASK:
+    name: Healing Flask
+  FLARE:
+    name: Flare
+  SCOUT_TRAP:
+    name: Scout Trap
+  MINION_CANDY:
+    name: Minion Candy
+  IRONGUARD_CONTRACT:
+    name: Ironguard Contract
+  PROTECTOR_CONTRACT:
+    name: Protector Contract
+  DRAGONBLOOD_CONTRACT:
+    name: Dragonblood Contract
+  WEAPON_INFUSION:
+    name: Weapon Infusion
+  CRYSTAL_INFUSION:
+    name: Crystal Infusion
+
+edges: 
+  -
+    head: WEAPON_BLADE
+    tail: HEAVY_STEEL
+  -
+    head: WEAPON_BLADE
+    tail: SIX_SINS
+  -
+    head: WEAPON_BLADE 
+    tail: PIERCING_SPEAR
+  -
+    head: BOOK_OF_EULOGIES 
+    tail: BARBED_NEEDLE
+
+  -
+    head: SWIFT_SHOOTER 
+    tail: BLAZING_SALVO
+
+  -
+    head: MINIONS_FEET 
+    tail: LUCKY_STRIKE
+
+  -
+    head: HOURGLASS 
+    tail: CHRONOGRAPH
+
+  -
+    head: HEAVY_STEEL 
+    tail: SORROWBLADE
+  -
+    head: HEAVY_STEEL 
+    tail: SERPENT_MASK
+  -
+    head: HEAVY_STEEL 
+    tail: BREAKING_POINT
+
+  -
+    head: SIX_SINS 
+    tail: SORROWBLADE
+  -
+    head: SIX_SINS 
+    tail: SPELLSWORD
+  -
+    head: SIX_SINS 
+    tail: TENSION_BOW
+  -
+    head: SIX_SINS 
+    tail: TYRANTS_MONOCLE
+
+  -
+    head: BARBED_NEEDLE 
+    tail: SERPENT_MASK
+  -
+    head: BARBED_NEEDLE
+    tail: POISONED_SKIV
+
+  -
+    head: PIERCING_SPEAR 
+    tail: TENSION_BOW
+  -
+    head: PIERCING_SPEAR 
+    tail: BONESAW
+
+  -
+    head: BLAZING_SALVO 
+    tail: POISONED_SKIV
+  -
+    head: BLAZING_SALVO 
+    tail: BREAKING_POINT
+  - 
+    head: BLAZING_SALVO 
+    tail: BONESAW
+  - 
+    head: BLAZING_SALVO
+    tail: TORNADO_TRIGGER
+
+  - 
+    head: LUCKY_STRIKE 
+    tail: TORNADO_TRIGGER
+  -
+    head: LUCKY_STRIKE 
+    tail: TYRANTS_MONOCLE
+  -
+    head: CHRONOGRAPH 
+    tail: SPELLSWORD
+
+  # Crystals
+  -
+    head: CRYSTAL_BIT 
+    tail: HEAVY_PRISM
+  -
+    head: CRYSTAL_BIT 
+    tail: ECLIPSE_PRISM
+  -
+   head: CRYSTAL_BIT 
+   tail: PIERCING_SHARD
+
+  -
+   head: ENERGY_BATTERY 
+   tail: VOID_BATTERY
+
+  -
+   head: HEAVY_PRISM 
+   tail: SHATTERGLASS
+  -
+   head: HEAVY_PRISM 
+   tail: BROKEN_MYTH
+  -
+   head: HEAVY_PRISM 
+   tail: FROSTBURN
+  -
+   head: HEAVY_PRISM 
+   tail: EVE_OF_HARVEST
+  -
+   head: HEAVY_PRISM 
+   tail: ALTERNATING_CURRENT
+
+  -
+   head: ECLIPSE_PRISM 
+   tail: SHATTERGLASS
+  -
+   head: ECLIPSE_PRISM 
+   tail: FROSTBURN
+  -
+   head: ECLIPSE_PRISM 
+   tail: AFTERSHOCK
+
+  -
+   head: PIERCING_SHARD 
+   tail: BROKEN_MYTH
+
+  -
+   head: VOID_BATTERY 
+   tail: EVE_OF_HARVEST
+  -
+   head: VOID_BATTERY 
+   tail: ECHO
+  -
+   head: VOID_BATTERY 
+   tail: CLOCKWORK
+
+  -
+   head: CHRONOGRAPH 
+   tail: AFTERSHOCK
+
+  -
+   head: BLAZING_SALVO 
+   tail: ALTERNATING_CURRENT
+
+  # Defenses 
+  -
+   head: OAKHEART 
+   tail: DRAGONHEART
+  -
+   head: OAKHEART 
+   tail: LIFESPRING
+  -
+   head: OAKHEART 
+   tail: REFLEX_BLOCK
+
+  -
+   head: LIGHT_SHIELD 
+   tail: KINETIC_SHIELD
+
+  -
+   head: LIGHT_ARMOR 
+   tail: COAT_OF_PLATES
+
+  -
+   head: DRAGONHEART 
+   tail: SLUMBERING_HUSK
+  -
+   head: DRAGONHEART 
+   tail: CRUCIBLE
+
+  -
+   head: LIFESPRING 
+   tail: FOUNTAIN_OF_RENEWEL
+
+  -
+   head: REFLEX_BLOCK 
+   tail: CRUCIBLE
+  -
+   head: REFLEX_BLOCK 
+   tail: AEGIS
+
+  -
+   head: KINETIC_SHIELD 
+   tail: FOUNTAIN_OF_RENEWEL
+  -
+   head: KINETIC_SHIELD 
+   tail: AEGIS
+
+  -
+   head: COAT_OF_PLATES 
+   tail: METAL_JACKET
+  -
+   head: COAT_OF_PLATES 
+   tail: ATLAS_PAULDRON
+
+  # Utility
+  -
+   head: SPRINT_BOOTS 
+   tail: TRAVEL_BOOTS
+
+  -
+   head: TRAVEL_BOOTS 
+   tail: JOURNEY_BOOTS
+  -
+   head: TRAVEL_BOOTS 
+   tail: WAR_TREADS
+  -
+   head: TRAVEL_BOOTS 
+   tail: HALCYON_CHARGERS
+
+  -
+   head: FLARE_GUN 
+   tail: CONTRAPTION
+
+  -
+   head: STORMGUARD_BANNER 
+   tail: STORMCROWN
+
+  -
+   head: VOID_BATTERY 
+   tail: HALCYON_CHARGERS
+
+  -
+   head: CHRONOGRAPH 
+   tail: CONTRAPTION
+  -
+   head: CHRONOGRAPH 
+   tail: STORMCROWN
+  -
+   head: CHRONOGRAPH 
+   tail: NULLWAVE_GAUNTLET
+
+  -
+   head: DRAGONHEART 
+   tail: WAR_TREADS
+  -
+   head: DRAGONHEART 
+   tail: SHIVERSTEEL
